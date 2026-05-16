@@ -1,0 +1,53 @@
+Este arquivo na pasta /data serve APENAS como modelo de demonstração para a entrega.
+Por motivos do programa não conseguir salvar dados dentro da pasta data na raíz do programa,
+os arquivos originais ficam na pasta → \AppData\Roaming\musicplayer\playlists.json (userData)
+
+{
+  "Playlist Modelo": [
+    {
+      "name": "Wake Me Up (Extended Mix)",
+      "artist": "Avicii feat. Aloe Blacc",
+      "album": "Wake Me Up",
+      "picture": null,
+      "path": "E:\\OneDrive\\Bibliotecas\\Músicas\\Avicii feat. Aloe Blacc - Wake Me Up (Extended Mix).mp3",
+      "url": "file:///E:/OneDrive/Bibliotecas/M%C3%BAsicas/Avicii%20feat.%20Aloe%20Blacc%20-%20Wake%20Me%20Up%20(Extended%20Mix).mp3",
+      "mtime": 1739585241627.8354
+    },
+    {
+      "name": "Levels",
+      "artist": "Avicii",
+      "album": "Levels - EP",
+      "picture": null,
+      "path": "E:\\OneDrive\\Bibliotecas\\Músicas\\Avicii - Levels.mp3",
+      "url": "file:///E:/OneDrive/Bibliotecas/M%C3%BAsicas/Avicii%20-%20Levels.mp3",
+      "mtime": 1633284970000
+    },
+    {
+      "name": "Ghosts 'n' Stuff",
+      "artist": "Deadmau5 feat. Rob Swire",
+      "album": "For Lack Of A Better Name",
+      "picture": null,
+      "path": "E:\\OneDrive\\Bibliotecas\\Músicas\\Deadmau5 feat. Rob Swire - Ghosts N Stuff (Extended Version).mp3",
+      "url": "file:///E:/OneDrive/Bibliotecas/M%C3%BAsicas/Deadmau5%20feat.%20Rob%20Swire%20-%20Ghosts%20N%20Stuff%20(Extended%20Version).mp3",
+      "mtime": 1582406298000
+    },
+    {
+      "name": "Carry You (feat. Oaks & Declan J Donovan) (Extended Mix)",
+      "artist": "Martin Garrix & Third Party",
+      "album": "Carry You - Extended Mix",
+      "picture": null,
+      "path": "E:\\OneDrive\\Bibliotecas\\Músicas\\Martin Garrix & Third Party - Carry You (feat. Oaks & Declan J Donovan) (Extended Mix).mp3",
+      "url": "file:///E:/OneDrive/Bibliotecas/M%C3%BAsicas/Martin%20Garrix%20&%20Third%20Party%20-%20Carry%20You%20(feat.%20Oaks%20&%20Declan%20J%20Donovan)%20(Extended%20Mix).mp3",
+      "mtime": 1711043972689.989
+    },
+    {
+      "name": "Higher (Extended Mix)",
+      "artist": "Matisse & Sadko",
+      "album": "Higher",
+      "picture": null,
+      "path": "E:\\OneDrive\\Bibliotecas\\Músicas\\Matisse & Sadko - Higher (Extended Mix).mp3",
+      "url": "file:///E:/OneDrive/Bibliotecas/M%C3%BAsicas/Matisse%20&%20Sadko%20-%20Higher%20(Extended%20Mix).mp3",
+      "mtime": 1770004584447.2505
+    }
+  ]
+}
