@@ -16,6 +16,67 @@ body {
   overflow: hidden;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+}
+
+.custom-title-bar {
+  display: flex;
+  height: 32px;
+  background-color: #000000; /* Cor do topo */
+  user-select: none;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.title-bar-drag-area {
+  flex: 1;
+  -webkit-app-region: drag; /* Essa área move a janela */
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.title-bar-text {
+  color: #1db954; /* Seu verde Stardust */
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.title-bar-controls {
+  display: flex;
+  -webkit-app-region: no-drag; /* Botões devem ser clicáveis */
+}
+
+.title-btn {
+  background: transparent;
+  border: none;
+  color: #b3b3b3;
+  width: 46px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s;
+  outline: none;
+}
+
+.title-btn:hover {
+  background-color: #282828;
+  color: #fff;
+}
+
+.title-btn.close:hover {
+  background-color: #e81123; /* Vermelho padrão de fechar no Windows */
+  color: #fff;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;

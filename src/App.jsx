@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import './App.css';
+import TitleBar from './components/TitleBar';
 import AudioVisualizer from './components/AudioVisualizer';
 import SettingsModal from './components/SettingsModal';
 import { audioService } from './service/AudioService';
@@ -643,6 +644,7 @@ export default function App() {
     // ====================================================
     return (
         <div className="app-container">
+            <TitleBar /> 
             {isMobileSidebarOpen && (
                 <div
                     style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 5 }}

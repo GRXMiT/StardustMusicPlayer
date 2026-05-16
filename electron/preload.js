@@ -11,5 +11,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
     savePlaylists: (data) => ipcRenderer.invoke('save-playlists', data),
     readPlaylists: () => ipcRenderer.invoke('read-playlists'),
     saveVisualizerPresets: (data) => ipcRenderer.invoke('save-visualizer-presets', data),
-    readVisualizerPresets: () => ipcRenderer.invoke('read-visualizer-presets')
+    readVisualizerPresets: () => ipcRenderer.invoke('read-visualizer-presets'),
+    minimize: () => ipcRenderer.send('window:minimize'),
+    maximize: () => ipcRenderer.send('window:maximize'),
+    close: () => ipcRenderer.send('window:close')
 });

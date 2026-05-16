@@ -101,10 +101,31 @@ ipcMain.handle('read-visualizer-presets', async () => {
     }
 });
 
+// --- CONTROLES DA JANELA ---
+ipcMain.on('window:minimize', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender);
+    if (win) win.minimize();
+});
+
+ipcMain.on('window:maximize', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender);
+    if (win) {
+        if (win.isMaximized()) win.unmaximize();
+        else win.maximize();
+    }
+});
+
+ipcMain.on('window:close', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender);
+    if (win) win.close();
+});
+// ---------------------------------------
+
 function createWindow() {
     const win = new BrowserWindow({
         width: 1000,
         height: 700,
+        frame: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,
@@ -112,6 +133,8 @@ function createWindow() {
             webSecurity: false
         }
     });
+
+    win.removeMenu();
 
     if (!app.isPackaged) {
         win.loadURL('http://localhost:5173').catch(() => {});
